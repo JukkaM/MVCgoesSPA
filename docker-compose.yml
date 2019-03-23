@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mvcgoesspa:
+    image: ${DOCKER_REGISTRY-}mvcgoesspa
+    build:
+      context: .\MVCgoesSPA
+      dockerfile: Dockerfile
