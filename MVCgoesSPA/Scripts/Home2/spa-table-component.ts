@@ -5,4 +5,6 @@ import { Component } from "vue-property-decorator";
 })
 export default class SpaTableComponent extends Vue {
 
+
+
 }

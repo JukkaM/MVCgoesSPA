@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env, argv) => {
     const isDevBuild = !(env && env.prod);
@@ -28,8 +29,22 @@ module.exports = (env, argv) => {
                         "vue-loader"
                     ]
                 },
-                { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
-                { test: /\.scss$/, use: ['vue-style-loader', 'css-loader', 'sass-loader'] }
+                {
+                    test: /\.css$/,
+                    use: [
+                        {
+                            loader: MiniCssExtractPlugin.loader,
+                            options: {
+                            }
+                        }, 'css-loader']
+                },
+                {
+                    test: /\.scss$/,
+                    use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                        }
+                    }, 'css-loader', 'sass-loader'] }
             ]
         },
         resolve: {
@@ -49,6 +64,12 @@ module.exports = (env, argv) => {
                 'process.env': {
                     NODE_ENV: JSON.stringify(isDevBuild ? 'development' : 'production')
                 }
+            }),
+            new MiniCssExtractPlugin({
+                // Options similar to the same options in webpackOptions.output
+                // both options are optional
+                filename: "[name].css",
+                chunkFilename: "[id].css"
             })
         ].concat(isDevBuild ? [
             new CheckerPlugin(),

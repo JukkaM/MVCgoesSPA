@@ -169,6 +169,8 @@
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
     <Content Include="package.json" />
+    <Content Include="Scripts\Home2\spa-table-component.vue" />
+    <None Include="Scripts\Home2\layout-component.vue" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -195,6 +197,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="tsconfig.json" />
     <Content Include="Views\Home2\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutSPA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,6 +218,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\Home2\app.ts" />
+    <TypeScriptCompile Include="Scripts\Home2\layout-component.ts" />
+    <TypeScriptCompile Include="Scripts\Home2\spa-table-component.ts" />
     <TypeScriptCompile Include="Scripts\typings\vue-shim.d.ts" />
   </ItemGroup>
   <ItemGroup>
