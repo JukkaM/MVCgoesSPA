@@ -1,6 +1,22 @@
 {
-  "version": "1.0.0",
-  "name": "MVCgoesSPA",
-  "private": true,
-  "devDependencies": {}
+    "version": "1.0.0",
+    "name": "MVCgoesSPA",
+    "private": true,
+    "devDependencies": {
+        "vue": "2.6.10",
+        "vue-property-decorator": "8.1.0",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "4.29.6",
+        "webpack-dev-server": "3.2.1",
+        "vue-loader": "15.7.0",
+        "typescript": "3.3.4000",
+        "awesome-typescript-loader": "5.2.1",
+        "sass-loader": "7.1.0",
+        "vue-style-loader": "4.1.2",
+        "uglifyjs-webpack-plugin": "^1.2.7",
+        "bootstrap-vue": "2.0.0-rc.15",
+        "css-loader": "2.1.1",
+        "vue-tables-2": "1.4.70",
+        "axios": "0.18.0"
+    }
 }
