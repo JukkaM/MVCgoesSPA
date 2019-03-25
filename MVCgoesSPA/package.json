@@ -2,11 +2,15 @@
     "version": "1.0.0",
     "name": "MVCgoesSPA",
     "private": true,
+    "scripts": {
+        "start": "webpack-dev-server"
+    },
     "devDependencies": {
         "vue": "2.6.10",
         "vue-property-decorator": "8.1.0",
         "vue-template-compiler": "^2.5.17",
         "webpack": "4.29.6",
+        "webpack-cli": "3.3.0",
         "webpack-dev-server": "3.2.1",
         "vue-loader": "15.7.0",
         "typescript": "3.3.4000",

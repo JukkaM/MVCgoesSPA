@@ -18,6 +18,10 @@ packages
 [Bb]in
 [Oo]bj
 
+dist/
+app.js
+app.js.map
+
 # Logs
 logs
 *.log
