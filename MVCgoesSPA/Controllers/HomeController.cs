@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCgoesSPA.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,21 +11,15 @@ namespace MVCgoesSPA.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var spas = new Repository().GetAllSpas();
+            return View(spas);
         }
 
-        public ActionResult About()
+        public ActionResult Spa(int id)
         {
-            ViewBag.Message = "Your application description page.";
+            var spa = new Repository().GetAllSpas().Skip(id - 1).First();
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(spa);
         }
     }
 }
