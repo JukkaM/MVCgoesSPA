@@ -219,6 +219,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\Home2\app.ts" />
     <TypeScriptCompile Include="Scripts\Home2\layout-component.ts" />
+    <TypeScriptCompile Include="Scripts\Home2\models.ts" />
     <TypeScriptCompile Include="Scripts\Home2\spa-table-component.ts" />
     <TypeScriptCompile Include="Scripts\typings\vue-shim.d.ts" />
   </ItemGroup>
