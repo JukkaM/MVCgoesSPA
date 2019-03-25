@@ -1,15 +1,16 @@
 {
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "noEmitOnError": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "target": "es5",
-    "moduleResolution": "node",
-    "module": "es6"
-  },
-  "exclude": [
-    "node_modules",
-    "wwwroot"
-  ]
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es5",
+        "moduleResolution": "node",
+        "module": "es6",
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules",
+        "wwwroot"
+    ]
 }
