@@ -171,6 +171,7 @@
     <Content Include="package.json" />
     <Content Include="Scripts\Home2\spa-table-component.vue" />
     <None Include="Scripts\Home2\layout-component.vue" />
+    <Content Include="Scripts\Home2\spa-details-component.vue" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -220,6 +221,7 @@
     <TypeScriptCompile Include="Scripts\Home2\app.ts" />
     <TypeScriptCompile Include="Scripts\Home2\layout-component.ts" />
     <TypeScriptCompile Include="Scripts\Home2\models.ts" />
+    <TypeScriptCompile Include="Scripts\Home2\spa-details-component.ts" />
     <TypeScriptCompile Include="Scripts\Home2\spa-table-component.ts" />
     <TypeScriptCompile Include="Scripts\typings\vue-shim.d.ts" />
   </ItemGroup>

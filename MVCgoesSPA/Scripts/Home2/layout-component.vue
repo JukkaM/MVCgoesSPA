@@ -23,7 +23,7 @@
                 <h1>Generic spa listing site for demo purposes</h1>
             </div>
             
-            <spa-table-component />
+            <router-view></router-view>
             <hr />
             <footer>
                 <p>My SPA.NET Application</p>

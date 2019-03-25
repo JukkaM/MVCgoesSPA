@@ -2,7 +2,6 @@
 import { Component, Prop } from "vue-property-decorator";
 import axios from "axios";
 import { Spa, Visitor } from "./models";
-import VueTables from "vue-tables-2";
 
 @Component({
 })
@@ -21,7 +20,8 @@ export default class SpaTableComponent extends Vue {
                     name: value.Name,
                     day_price: value.DayTicketPrice,
                     weekend_price: value.WeekEndTicketPrice,
-                    number_of_visitors: value.Visitors.length
+                    number_of_visitors: value.Visitors.length,
+                    _id: index
                 });
                 this.isBusy = false;
             });
@@ -30,6 +30,6 @@ export default class SpaTableComponent extends Vue {
     }
 
     rowSelected(rows: any) {
-        console.log(rows);
+        this.$router.push("/spa/" + (rows[0]._id + 1));
     }
 }
