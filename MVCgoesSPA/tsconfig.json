@@ -4,7 +4,9 @@
     "noEmitOnError": true,
     "removeComments": false,
     "sourceMap": true,
-    "target": "es5"
+    "target": "es5",
+    "moduleResolution": "node",
+    "module": "es6"
   },
   "exclude": [
     "node_modules",
